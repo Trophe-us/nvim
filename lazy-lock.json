@@ -23,6 +23,7 @@
   "telescope.nvim": { "branch": "master", "commit": "776b509f80dd49d8205b9b0d94485568236d1192" },
   "vim": { "branch": "master", "commit": "248e649f2fbd262292ee4196cadb5b7f38168f37" },
   "vim-commentary": { "branch": "master", "commit": "e87cd90dc09c2a203e13af9704bd0ef79303d755" },
+  "vim-fugitive": { "branch": "master", "commit": "572c8510123cbde02e8a1dafcd376c98e1e13f43" },
   "vim-nightfly-colors": { "branch": "master", "commit": "06eaaaa8717538a7ce96b13c137da8c9eaa84ec8" },
   "vimtex": { "branch": "master", "commit": "534fd725f2475a9083b032e402c7e73b8a3fc6bb" }
 }

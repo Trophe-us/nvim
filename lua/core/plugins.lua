@@ -23,7 +23,7 @@ local plugins = {
   'nvim-treesitter/nvim-treesitter',
   'bluz71/vim-nightfly-colors',
   'lewis6991/gitsigns.nvim',
-  -- 'tpope/vim-fugitive',
+  'tpope/vim-fugitive',
   'tpope/vim-commentary',
   'lervag/vimtex',
   'barreiroleo/ltex-extra.nvim',
