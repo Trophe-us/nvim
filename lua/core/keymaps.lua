@@ -60,21 +60,3 @@ keymap("x", "J", ":m '>+1<CR>gv=gv", opts)
 keymap("x", "K", ":m '<-2<CR>gv=gv", opts)
 keymap("x", "<A-j>", ":m '>+1<CR>gv=gv", opts)
 keymap("x", "<A-k>", ":m '<-2<CR>gv=gv", opts)
-
--- Compile document, be it groff/LaTeX/markdown/etc.
--- keymap('n', '<leader>c :w! \| !compiler <c-r>%<CR>', opts)
--- Turn on Autocompiler mode
--- vim.keymap.set('n', "<leader>a :!setsid autocomp % &<CR>")
--- Open corresponding .pdf/.html or preview
--- vim.keymap.set('n', "<leader>p :!opout <c-r>%<CR><CR>")
--- Cleans out tex build files when I close out of a .tex file.
---    autocmd VimLeave *.tex !texclear %
---    command C !xelatex %
---    au BufWritePost *.tex ! xelatex %
-
--- Terminal --
--- Better terminal navigation
--- keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
--- keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
--- keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
--- keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
