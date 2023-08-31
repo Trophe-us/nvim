@@ -20,9 +20,7 @@ vim.opt.backspace = '2'
 vim.opt.swapfile = false
 vim.opt.wrap = false
 
---Line numbers
-vim.wo.number = true
-
+-- undo settings
 vim.opt.backup = false
 vim.opt.undodir = os.getenv("HOME") .. "/.local/share/nvim/undo"
 vim.opt.undofile = true

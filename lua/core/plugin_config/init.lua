@@ -1,3 +1,4 @@
+require("core.plugin_config.autocommands")
 require("core.plugin_config.mason")
 require("core.plugin_config.colorscheme")
 require("core.plugin_config.lualine")
