@@ -49,6 +49,7 @@ vim.keymap.set("n", "<S-h>", ":bprevious<CR>")
 vim.keymap.set("v", "<", "<gv^")
 vim.keymap.set("v", ">", ">gv^")
 
+vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle)
 -- search string under curser
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 -- chmo current file
@@ -57,13 +58,12 @@ vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/.config/nvim/lua/core/init.lua<CR>");
 
 vim.keymap.set("n", "<leader><leader>", function()
-  vim.cmd("so")
+    vim.cmd("so")
 end)
--- -- Modes
--- --   normal_mode = "n",
--- --   insert_mode = "i",
--- --   visual_mode = "v",
--- --   visual_block_mode = "x",
--- --   term_mode = "t",
--- --   command_mode = "c",
--- -- greatest remap ever
+-- Modes
+--   normal_mode = "n",
+--   insert_mode = "i",
+--   visual_mode = "v",
+--   visual_block_mode = "x",
+--   term_mode = "t",
+--   command_mode = "c",
