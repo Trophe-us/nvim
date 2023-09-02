@@ -29,29 +29,39 @@ local plugins = {
     'lervag/vimtex',
     'barreiroleo/ltex-extra.nvim',
 
-    'VonHeikemen/lsp-zero.nvim',
-    -- LSP Support
-    'neovim/nvim-lspconfig',             -- Required
-    'williamboman/mason.nvim',           -- Optional
-    'williamboman/mason-lspconfig.nvim', -- Optional
+    {
+        'VonHeikemen/lsp-zero.nvim',
+        branch = 'v2.x',
+        dependencies = {
+            -- LSP Support
+            { 'neovim/nvim-lspconfig' },             -- Required
+            { 'williamboman/mason.nvim' },           -- Optional
+            { 'williamboman/mason-lspconfig.nvim' }, -- Optional
 
-    -- Autocompletion
-    'hrsh7th/nvim-cmp',     -- Required
-    'hrsh7th/cmp-nvim-lsp', -- Required
-    'hrsh7th/cmp-buffer',
-    'hrsh7th/cmp-path',
-    'saadparwaiz1/cmp_luasnip',
-    'hrsh7th/cmp-nvim-lua',
+            -- Autocompletion
+            { 'hrsh7th/nvim-cmp' },     -- Required
+            { 'hrsh7th/cmp-nvim-lsp' }, -- Required
+            { 'hrsh7th/cmp-buffer' },
+            { 'hrsh7th/cmp-path' },
+            { 'saadparwaiz1/cmp_luasnip' },
+            { 'hrsh7th/cmp-nvim-lua' },
 
-    -- Snippets
-    'L3MON4D3/LuaSnip',
-    'rafamadriz/friendly-snippets',
+            -- Snippets
+            {
+                "L3MON4D3/LuaSnip",
+                version = "2.*",
+                build = "make install_jsregexp"
+            },
 
-    'nvim-telescope/telescope.nvim',
-    tag = '0.1.2',
-    -- or                              , branch = '0.1.x',
-    dependencies = { 'nvim-lua/plenary.nvim' }
+            { 'rafamadriz/friendly-snippets' },
+        }
+    },
 
+    {
+        'nvim-telescope/telescope.nvim',
+        tag = '0.1.2',
+        dependencies = { 'nvim-lua/plenary.nvim' }
+    }
 }
 
 local opts = {}
